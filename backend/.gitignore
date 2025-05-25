@@ -1,0 +1,58 @@
+# Backend-specific ignores
+
+# Environment variables (extra protection)
+.env
+.env.local
+.env.production
+.env.development
+
+# Database backups and dumps
+*.dump
+*.sql.backup
+database_backup/
+
+# Uploaded files (if you add file uploads later)
+uploads/
+public/uploads/
+
+# Session storage
+sessions/
+
+# Certificate files
+*.pem
+*.key
+*.crt
+
+# Backend logs
+logs/
+*.log
+access.log
+error.log
+
+# PM2 files (if using PM2 for production)
+ecosystem.config.js
+.pm2/
+
+# Docker files (if you dockerize later)
+.dockerignore
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# Cache directories
+.cache/
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+data/
+
+# Stripe CLI logs (if testing webhooks locally)
+stripe-webhook-*.log
